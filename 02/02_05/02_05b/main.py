@@ -4,3 +4,12 @@ seating_chart = [
     ["Katherine", "Lauren", "Mary", "Nathan", "Olive"],
     ["Chad", "April", "Matt", "Thomas", "Penny"]
 ]
+
+
+student = seating_chart[2][1]
+#print(student)
+
+for i, row in enumerate(seating_chart):
+  for j, student in enumerate(row):
+    print(f"{student} seat {i+1}{j+1}")
+    #print(j + " " + str(seating_chart.index(i))+ " : " + str(i.index(j)))
